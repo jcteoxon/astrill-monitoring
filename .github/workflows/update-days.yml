@@ -1,0 +1,36 @@
+name: Update Astrill Days Remaining
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-days:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Update Days Remaining
+        run: |
+          python update_days.py
+
+      - name: Commit Changes
+        run: |
+          git config user.name "jcteoxon"
+          git config user.email "jc.teoxon@statsonic.tech"
+
+          git add .
+          git diff --cached --quiet || git commit -m "Auto update days remaining"
+
+          git push
