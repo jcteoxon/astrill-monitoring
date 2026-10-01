@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,6 +33,14 @@ jobs:
           git config user.email "jc.teoxon@statsonic.tech"
 
           git add .
-          git diff --cached --quiet || git commit -m "Auto update days remaining"
 
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Auto update days remaining"
+
+          git pull --rebase origin main
+
+          git push origin main
