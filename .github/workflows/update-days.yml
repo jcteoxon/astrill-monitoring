@@ -2,7 +2,7 @@ name: Update Astrill Days Remaining
 
 on:
   schedule:
-    - cron: '35 9 * * *'
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 permissions:
