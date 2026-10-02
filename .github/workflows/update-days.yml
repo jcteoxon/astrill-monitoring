@@ -41,6 +41,15 @@ jobs:
 
           git commit -m "Auto update days remaining"
 
-          git pull --rebase origin main
+          for i in {1..5}; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "Successfully pushed changes"
+              exit 0
+            fi
 
-          git push origin main
+            echo "Push failed, retrying... (attempt $i/5)"
+            sleep 2
+          done
+
+          echo "Failed to push after 5 attempts"
+          exit 1
