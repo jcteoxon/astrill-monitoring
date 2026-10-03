@@ -1,13 +1,13 @@
 import json
 from datetime import datetime
 from zoneinfo import ZoneInfo
- 
+
 FILE = "astrill account.json"
- 
+
 today = datetime.now(
 ZoneInfo("Asia/Manila")
 ).date()
- 
+
 with open(FILE, "r", encoding="utf-8") as f:
 data = json.load(f)
 
