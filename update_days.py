@@ -5,11 +5,11 @@ from zoneinfo import ZoneInfo
 FILE = "astrill account.json"
 
 today = datetime.now(
-ZoneInfo("Asia/Manila")
+    ZoneInfo("Asia/Manila")
 ).date()
 
 with open(FILE, "r", encoding="utf-8") as f:
-data = json.load(f)
+    data = json.load(f)
 
 for account in data:
     expiry = datetime.strptime(
