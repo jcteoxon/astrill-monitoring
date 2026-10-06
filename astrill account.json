@@ -3,48 +3,48 @@
     "account": "VPN01",
     "email": "statsonic.astrill.vpn.01@gmail.com",
     "expiry_date": "2027-01-09",
-    "days_remaining": 95
+    "days_remaining": 94
   },
   {
     "account": "VPN02",
     "email": "statsonic.astrill.vpn.02@gmail.com",
     "expiry_date": "2027-01-09",
-    "days_remaining": 95
+    "days_remaining": 94
   },
   {
     "account": "VPN03",
     "email": "statsonic.astrill.vpn.03@gmail.com",
     "expiry_date": "2027-01-09",
-    "days_remaining": 95
+    "days_remaining": 94
   },
   {
     "account": "VPN04",
     "email": "statsonic.astrill.vpn.04@gmail.com",
     "expiry_date": "2027-05-18",
-    "days_remaining": 224
+    "days_remaining": 223
   },
   {
     "account": "VPN05",
     "email": "statsonic.astrill.vpn.05@protonmail.com",
     "expiry_date": "2027-05-09",
-    "days_remaining": 215
+    "days_remaining": 214
   },
   {
     "account": "VPN06",
     "email": "statsonic.astrill.vpn.06@protonmail.com",
     "expiry_date": "2027-05-09",
-    "days_remaining": 215
+    "days_remaining": 214
   },
   {
     "account": "VPN07",
     "email": "statsonic.astrill.vpn.07@protonmail.com",
     "expiry_date": "2027-05-09",
-    "days_remaining": 215
+    "days_remaining": 214
   },
   {
     "account": "VPN08",
     "email": "statsonic.astrill.vpn.08@protonmail.com",
     "expiry_date": "2027-05-09",
-    "days_remaining": 215
+    "days_remaining": 214
   }
 ]
